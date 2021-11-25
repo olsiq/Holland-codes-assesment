@@ -8,7 +8,7 @@ function Footer() {
       <p>
         This website is made by
         <br />
-        <strong>Olsi Qemalli & Euripidis Kazakis</strong>
+        <strong>Olsi Qemalli </strong>
       </p>
     </footer>
   );
