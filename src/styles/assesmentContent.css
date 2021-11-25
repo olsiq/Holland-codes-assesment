@@ -1,0 +1,90 @@
+.erwtisi-apantisi {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "erwtisi erwtisi apantisi";
+}
+
+.erwtisi {
+  grid-area: erwtisi;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+/* .erwtisi-apantisi:nth-child(2n+1) {
+    background-image: linear-gradient(to right, rgb(182, 182, 182) 50%, rgb(255, 255, 255,0) 67%);
+  } */
+
+.apantisi {
+  grid-area: apantisi;
+  align-self: center;
+  align-items: center;
+  margin: 5px;
+  padding: 3px;
+  border-radius: 7px;
+  border: darkgray 2px solid;
+  background-image: linear-gradient(
+    to right,
+    rgba(128, 0, 128, 0.3) 20%,
+    rgba(28, 0, 128, 0.3) 20% 40%,
+    rgba(0, 128, 68, 0.3) 40% 60%,
+    rgba(0, 128, 0, 0.3) 60% 80%,
+    rgba(105, 128, 0, 0.3) 80%
+  );
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+/* On screens that are 992px or less*/
+@media screen and (max-width: 992px) {
+  .quiz {
+    display: none;
+  }
+
+  .erwtisi-apantisi {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "erwtisi"
+      "apantisi";
+  }
+
+  .erwtisi {
+    grid-area: erwtisi;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  label.a.sd {
+    font-size: smaller;
+  }
+  label.a.sag {
+    font-size: smaller;
+  }
+  label.a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .sd::before {
+    content: "Strongly Dislike";
+  }
+  .d::before {
+    content: "Dislike";
+  }
+  .ns::before {
+    content: "Unsure";
+  }
+  .ag::before {
+    content: "Like";
+  }
+  .sag::before {
+    content: "Strongly Like";
+  }
+}

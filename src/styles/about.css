@@ -1,0 +1,45 @@
+  .containerHolland p{
+    letter-spacing: 1.1px;
+  }
+  
+  .holland{
+    height:auto;
+  }
+
+
+  .container-h {
+      border: 2px solid #dedede;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      padding: 10px;
+      margin:  0;
+    }
+    
+    /* Darker container */
+    .container2 {
+      border-color: #ccc;
+      background-color: #ddd;
+    }
+    
+    /* Clear floats */
+    .container-h::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    /* Style images */
+    .container-h img {
+      float: left;
+      width: 20%;
+      margin-right: 10px;
+      border-radius: 5%;
+    }
+    
+    /* Style the right image */
+    .container2 > img.right {
+      float: right;
+      width: 20%;
+      margin-left: 10px;
+      margin-right:0;
+    }

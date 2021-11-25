@@ -1,0 +1,15 @@
+.assementcontainer {
+  width: 90%;
+  margin: 10px auto;
+  /* border: 1px solid; */
+}
+
+.wraper:nth-child(odd) {
+  /* background-image: linear-gradient(
+    to right,
+    rgb(182, 182, 182) 50%,
+    rgba(255, 255, 255, 0.397) 67%
+  ); */
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}

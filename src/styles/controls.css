@@ -1,0 +1,56 @@
+.control-wraper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "reset next"
+    "progress progress";
+  gap: 15px 10px;
+  margin-top: 15px;
+}
+
+#reset {
+  grid-area: reset;
+}
+
+#next-btn {
+  grid-area: next;
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  grid-area: progress;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+progress {
+  margin-left: 10px;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 700px) {
+  .control-wraper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "next"
+      "reset"
+      "progress";
+    gap: 15px 10px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .control-wraper > div > button {
+    width: 200px;
+  }
+}
